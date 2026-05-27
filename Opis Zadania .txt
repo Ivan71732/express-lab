@@ -1,0 +1,22 @@
+Express.js Lab
+
+Prosta aplikacja Express.js wykonana w ramach laboratorium.
+
+Funkcjonalność:
+- endpoint API /api/hello
+- zwracanie danych w formacie JSON
+- prosta strona HTML
+- pobieranie danych przez fetch
+
+Dane studenta:
+Imię: Ivan
+Nazwisko: Vlasenko
+Numer indeksu: 71732
+
+Uruchomienie projektu:
+
+npm install
+node app.js
+
+Adres aplikacji:
+http://localhost:3000
