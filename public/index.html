@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Express Lab</title>
+</head>
+<body>
+
+<h1>Dane studenta</h1>
+
+<div id="wynik">Ładowanie...</div>
+
+<script>
+fetch('/api/hello')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('wynik').innerHTML =
+      `
+      Imię: ${data.imie}<br>
+      Nazwisko: ${data.nazwisko}<br>
+      Numer indeksu: ${data.numerIndeksu}
+      `;
+  });
+</script>
+
+</body>
+</html>
